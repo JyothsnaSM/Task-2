@@ -1,31 +1,20 @@
-
-.header {
-    border: 1px solid red;
-    padding: 15px;
+body{
+    width:100%;
+    margin:0px 0px 0px 0px;
+    
 }
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-   
-    height:900px;
+@media only screen and (max-width:300px){
+    body{
+        margin:0px 0px 0px 0px;
+    }
 }
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 .flex-container{
     display:flex;
-    flex-direction:row-reverse;
-    background-color:rgb(19, 128, 118);
+    flex-direction:row;
+    background-color:none;
     box-shadow:black;
+    overflow:hidden;
+    width:100%;
 }
 @media only screen and (max-width:500px){
     .flex-container{
@@ -36,7 +25,7 @@
     
     background-color:none;
     width: 100px;
-    margin: 10px;
+    margin: 0px;
     text-align: center;
     line-height: 20px;
     font-size: 15px;
@@ -65,13 +54,11 @@ div.gallery1{
    
 }
 
-div.gallery1:hover {
-    border: 1px solid #777;
-}
+
 
 div.gallery1 img {
     width: 100%;
-    height:213px;
+    height:250px;
 }
 
 div.desc {
@@ -87,11 +74,17 @@ div.desc {
     width:100;
 
 }
-@media only screen and (max-width:500px)
+@media only screen and (max-width:700px)
 {
     .responsive{
         width:46%;
         margin:6px 0;
+    }
+}
+@media only screen and (max-width:350px){
+    .responsive{
+        width:100%;
+        padding:6px;
     }
 }
 
@@ -139,8 +132,8 @@ h2{
 
 .flex-container1{
     display:flex;
-    flex-direction:row-reverse;
-    background-color:rgb(192, 55, 21);
+    flex-direction:row;
+    background-color:rgb(207, 143, 183);
 }
 
 .flex-container1>div{
@@ -158,7 +151,7 @@ h2{
 }
 
 .dropbtn {
-    background-color: rgb(192, 55, 21);
+    background-color: rgb(207, 143, 183);
   
     padding: 12px;
     font-size: 16px;
@@ -257,7 +250,7 @@ h2{
 
     
 
-@media only screen and (max-width:420px){ 
+@media only screen and (max-width:500px){ 
     .flex-container2{
     flex-direction:column;
     width:100%;
@@ -272,7 +265,7 @@ h2{
 .flex-container2>div{
     
     background-color:rgb(207, 143, 183);
-    width: 33%;
+    width: 33.3333%;
     margin: 0px;
     text-align: center;
     line-height: 20px;
@@ -283,20 +276,19 @@ h2{
 .mySlides{
     display:none;
 }
-@media only screen and (max-width:450px){
+@media only screen and (max-width:470px){
     .mySlides{
         display:none;
     }
 }
 .slideshow{
-    width:500px;
-    margin-left:20%;
-    height:450px;
+    width:100%;
+    height:550px;
     overflow:hidden;
+    border-color:1px solid black;
 }
 #prop {
-    
-    width:100%;
+   width:100%;
     height:400px;
 }
 @media only screen and (max-width:450px){
@@ -306,5 +298,9 @@ h2{
 }
 P{
     line-height:1.5;
+}
+#new{
+    height:136px;
+    width:136px;
 }
 
